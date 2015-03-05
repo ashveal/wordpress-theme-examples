@@ -1,0 +1,39 @@
+html
+{
+	background: #7F7F7F url("../images/train.jpg") no-repeat center top fixed;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1000px;
+	min-height: 909px;
+	padding-bottom: 91px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u104
+{
+	z-index: 2;
+	width: 881px;
+	margin-right: -10000px;
+	margin-top: 27px;
+	left: 60px;
+}
+
+#u85-6
+{
+	z-index: 4;
+	width: 522px;
+	min-height: 72px;
+	margin-right: -10000px;
+	margin-top: 655px;
+	left: 237px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

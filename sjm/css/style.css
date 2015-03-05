@@ -1,0 +1,1386 @@
+::-moz-selection {
+  background: #888;
+  color: #FFF;
+  text-shadow: none;
+}
+::selection {
+  background: #888;
+  color: #FFF;
+  text-shadow: none;
+}
+.clear {
+  clear: both;
+  height: 0;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans', sans-serif;
+}
+p,
+div {
+  font-family: 'PT Sans', sans-serif;
+}
+input {
+  font-family: 'PT Sans', sans-serif;
+}
+img {
+  border: none;
+}
+form {
+  margin: 0;
+}
+body {
+  background: #272d42;
+}
+/*CUSTOM FONTS*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?d9o675');
+  src: url('../fonts/icomoon.eot?#iefixd9o675') format('embedded-opentype'), url('../fonts/icomoon.woff?d9o675') format('woff'), url('../fonts/icomoon.ttf?d9o675') format('truetype'), url('../fonts/icomoon.svg?d9o675#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\e600";
+}
+.icon-cart:before {
+  content: "\e603";
+}
+.icon-envelope:before {
+  content: "\e605";
+}
+.icon-clock:before {
+  content: "\e606";
+}
+.icon-search:before {
+  content: "\e601";
+}
+.icon-star:before {
+  content: "\e602";
+}
+.icon-heart:before {
+  content: "\e607";
+}
+.icon-play:before {
+  content: "\e604";
+}
+.icon-arrow-up:before {
+  content: "\e608";
+}
+.icon-arrow-right:before {
+  content: "\e609";
+}
+.icon-twitter:before {
+  content: "\e60a";
+}
+.icon-facebook:before {
+  content: "\e60b";
+}
+.icon-instagram:before {
+  content: "\e60c";
+}
+@font-face {
+  font-family: 'Conv_Mostardesign - Sofia Pro Bold';
+  src: url('../fonts/Mostardesign - Sofia Pro Bold.eot');
+  src: local('☺'), url('../fonts/Mostardesign - Sofia Pro Bold.woff') format('woff'), url('../fonts/Mostardesign - Sofia Pro Bold.ttf') format('truetype'), url('../fonts/Mostardesign - Sofia Pro Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  src: url('../fonts/Mostardesign - Sofia Pro Semi Bold.eot');
+  src: local('☺'), url('../fonts/Mostardesign - Sofia Pro Semi Bold.woff') format('woff'), url('../fonts/Mostardesign - Sofia Pro Semi Bold.ttf') format('truetype'), url('../fonts/Mostardesign - Sofia Pro Semi Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  src: url('../fonts/Mostardesign - Sofia Pro Light.eot');
+  src: local('☺'), url('../fonts/Mostardesign - Sofia Pro Light.woff') format('woff'), url('../fonts/Mostardesign - Sofia Pro Light.ttf') format('truetype'), url('../fonts/Mostardesign - Sofia Pro Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*CUSTOM FONTS*/
+/*HEADER*/
+header {
+  position: relative;
+}
+#header-menu-wrapper {
+  background: #d4d5d9;
+  height: 50px;
+}
+#header-menu-wrapper div.menu {
+  display: none;
+}
+#header-menu-wrapper div.search {
+  padding: 8px 0;
+}
+#header-menu-wrapper div.search form {
+  position: relative;
+}
+#header-menu-wrapper div.search input[type="text"] {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #9396A0;
+  box-shadow: none;
+  width: 90%;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+  padding: 0;
+}
+#header-menu-wrapper div.search button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #9396A0;
+  box-shadow: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+#header-menu-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header-menu-wrapper li {
+  display: inline-block;
+  padding: 15px 5px;
+  margin: 0;
+}
+#header-menu-wrapper a {
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+  color: #272d42;
+  padding: 0;
+  line-height: 15px;
+}
+#header-menu-wrapper a:hover {
+  color: #FFF;
+}
+#main-menu-wrapper {
+  background: #272d42;
+  height: 80px;
+}
+#main-menu-wrapper a.logo {
+  display: block;
+  width: 270px;
+  /*width: 100%;*/
+  height: 22px;
+  margin: 29px 0;
+  background: url(../img/logo.png) no-repeat center center;
+  background-size: 100% 100%;
+  /*background-size: 250px 17px;*/
+}
+#main-menu-wrapper div.mobile-menu {
+  padding: 0;
+}
+#main-menu-wrapper nav {
+  background: none;
+  border: none;
+  min-height: 80px;
+  margin-bottom: 0;
+}
+#main-menu-wrapper div.navbar-header {
+  height: 80px;
+  position: absolute;
+  width: 100%;
+}
+#main-menu-wrapper button.navbar-toggle {
+  border: none;
+  padding: 10px 0;
+  margin-right: 0;
+  position: absolute;
+  right: 10px;
+  top: -64px;
+}
+#main-menu-wrapper button.navbar-toggle:hover,
+#main-menu-wrapper button.navbar-toggle:focus {
+  background: none;
+}
+#main-menu-wrapper button.navbar-toggle .icon-bar {
+  background-color: #9396a0;
+}
+#main-menu-wrapper button.navbar-toggle:hover .icon-bar,
+#main-menu-wrapper button.navbar-toggle:focus .icon-bar {
+  background-color: #FFF;
+}
+#main-menu-wrapper .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+  max-height: none;
+  border: none;
+}
+#main-menu-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #272d42;
+}
+#main-menu-wrapper li {
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid #32384c;
+}
+#main-menu-wrapper > ul > li > ul.sub-menu {
+  background: #32384C;
+}
+#main-menu-wrapper ul.sub-menu {
+  display: none;
+}
+#main-menu-wrapper ul.sub-menu li {
+  padding: 0;
+  background: #32384C;
+}
+#main-menu-wrapper ul.sub-menu li.current_page_item a {
+  color: #88c874;
+}
+#main-menu-wrapper ul.sub-menu a {
+  background: none;
+  color: #d4d5d9;
+  display: block;
+  /*padding: 10px 0;*/
+}
+#main-menu-wrapper ul a {
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  font-size: 1.286em;
+  color: #FFF;
+  padding: 20px;
+  line-height: 20px;
+  /*background: #272d42;*/
+  background: url(../img/ico-arrow-down.png) no-repeat 95% center;
+}
+#main-menu-wrapper > ul > li.current-menu-item a,
+#main-menu-wrapper > ul > li.current-page-ancestor a,
+#main-menu-wrapper a:hover {
+  color: #88c874;
+}
+#sub-menu-wrapper {
+  background: #88c874;
+  height: 50px;
+}
+/*#sub-menu-wrapper div.submenu {
+	height: 50px;
+}
+
+#sub-menu-wrapper div.submenu h2 {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sub-menu-wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+#sub-menu-wrapper li {
+	display: inline-block;
+	padding: 15px 12px;
+	margin: 0;
+}
+
+#sub-menu-wrapper a {
+	font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+	font-size: 1.357em;
+	color: #FFF;
+	padding: 0;
+	line-height: 20px;
+}
+
+#sub-menu-wrapper li.current_page_item a,
+#sub-menu-wrapper a:hover {
+	color: #272d42;
+}
+
+#sub-menu-wrapper li:first-child {
+	padding-left: 0;
+}
+
+#sub-menu-wrapper li:last-child {
+	padding-right: 0;
+}*/
+#donation-wrapper div.container {
+  position: relative;
+  height: 0;
+}
+#donation-wrapper a.donation {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #f58220;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url(../img/btn-donate.png);
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  font-size: 1em;
+  color: #FFF;
+  text-transform: uppercase;
+  padding-left: 15px;
+  line-height: 30px;
+  -webkit-transition: width 0.5s ease-out-in;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+}
+#donation-wrapper a.donation:after {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #f58220;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url(../img/btn-donate.png);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9999;
+  content: '';
+}
+#donation-wrapper a.donation:hover {
+  width: 160px;
+}
+/*HEADER*/
+/*SLIDERS*/
+#slider-wrapper {
+  background: #FFF;
+  padding: 20px 10px 60px 10px;
+}
+#slider-wrapper .flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+#slider-wrapper .flexslider .slides {
+  margin: 0;
+  padding: 0;
+}
+#slider-wrapper .flexslider .slides li {
+  position: relative;
+  width: 1140px;
+  display: none;
+}
+#slider-wrapper .flexslider .slides li img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+#slider-wrapper .flexslider {
+  position: relative;
+}
+#slider-wrapper div.slider-nav {
+  padding: 20px 0 0 0;
+}
+#slider-wrapper div.slider-nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+#slider-wrapper div.slider-nav li {
+  display: inline-block;
+  padding-left: 5px;
+}
+#slider-wrapper div.slider-nav li:first-child {
+  padding: 0;
+}
+#slider-wrapper div.slider-nav a {
+  display: block;
+  width: 20px;
+  height: 5px;
+  background: #d4d5d9;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+#slider-wrapper div.slider-nav a.flex-active {
+  background: #272d42;
+}
+#google-map .acf-map {
+  width: 100%;
+  height: 375px;
+  margin-bottom: 25px;
+}
+/*SLIDERS*/
+/*COLLECTIONS*/
+#collection div.collection-categories {
+  border-bottom: 2px solid #f4f5f6;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+#collection div.collection-categories span.separator {
+  color: #f4f5f6;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.429em;
+  padding: 0 5px;
+}
+#collection div.collection-categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#collection div.collection-categories li {
+  display: inline-block;
+  padding: 0;
+}
+#collection div.collection-categories a {
+  color: #9396a0;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.429em;
+}
+#collection div.collection-categories a:hover {
+  color: #272d42;
+  text-decoration: none;
+}
+#collection div.collection-item {
+  padding: 0 0 20px 0;
+}
+#collection div.collection-item img {
+  margin-bottom: 10px;
+}
+#collection div.collection-item a {
+  color: #9396A0 !important;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+}
+#collection div.collection-item a:hover {
+  color: #272d42 !important;
+  text-decoration: none;
+}
+#collection-single div.desktop-product-header {
+  display: none;
+}
+#collection-single p.donator {
+  color: #88c874;
+}
+#collection-single p.code {
+  display: none;
+  color: #9396a0;
+  font-size: 0.857em;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+#collection-single div.related {
+  display: none;
+  margin-top: 40px;
+  padding: 20px;
+  background: #FFF;
+  border-bottom: 2px solid #d4d5d9;
+}
+#collection-single div.related h2 {
+  border-bottom: 2px solid #f4f5f6;
+  margin-bottom: 30px;
+}
+#collection-single div.related div.collection-item {
+  padding: 0 0 20px 0;
+}
+#collection-single div.related div.collection-item img {
+  margin-bottom: 10px;
+}
+#collection-single div.related div.collection-item a {
+  color: #9396A0 !important;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+}
+#collection-single div.related div.collection-item a:hover {
+  color: #272d42 !important;
+  text-decoration: none;
+}
+#collection-single div.image {
+  margin-bottom: 20px;
+  position: relative;
+  /*height: 435px;
+	overflow: hidden;*/
+}
+#collection-single div.image img {
+  width: 100%;
+}
+#collection-single div.image ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#collection-single div.image li:first-child {
+  display: inline-block;
+}
+#collection-single div.image li {
+  display: none;
+  padding: 0;
+  position: relative;
+}
+#collection-single div.image div.image-caption {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+}
+#collection-single div.image div.image-caption div.caption {
+  display: none;
+  width: 100%;
+  background: #8d919c;
+  position: relative;
+}
+#collection-single div.image div.image-caption div.caption p {
+  margin: 0;
+  color: #FFF;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 0.857em;
+  line-height: 35px;
+  padding: 0 15px;
+}
+#collection-single div.image div.image-caption div.caption-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#collection-single div.image div.image-caption div.caption-button a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: #272d42;
+  color: #FFF;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 35px;
+  outline: none;
+}
+#collection-single div.image div.image-caption div.caption-button a:hover,
+#collection-single div.image div.image-caption div.caption-button a:focus {
+  text-decoration: none;
+}
+#collection-single div.images {
+  display: none;
+  padding: 20px 0;
+}
+#collection-single div.images ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#collection-single div.images li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  padding: 0;
+  width: 98px;
+  height: 98px;
+}
+#collection-single div.images li:last-child {
+  margin: 0;
+}
+#collection-single div.images span.bar {
+  display: block;
+  margin-top: 10px;
+  height: 4px;
+  background: #f4f5f6;
+}
+#collection-single div.images span.bar-active {
+  background: #9396a0;
+}
+#collection-single div.share {
+  border-top: 2px solid #f4f5f6;
+  padding-top: 20px;
+}
+#collection-single div.share ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+#collection-single div.share li {
+  display: inline-block;
+  padding: 0 0 0 5px;
+}
+#collection-single div.share a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: #d4d5d9;
+  color: #FFF;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 35px;
+  outline: none;
+}
+#collection-single div.share a span {
+  line-height: 35px;
+}
+#collection-single div.share a:hover {
+  text-decoration: none;
+}
+#collection-single div.share a.twitter:hover {
+  background: #00baff;
+}
+#collection-single div.share a.facebook:hover {
+  background: #2a52d4;
+}
+#collection-single div.share a.email:hover {
+  background: #272d42;
+}
+#collection-single div.share a:focus {
+  text-decoration: none;
+}
+#collection-single div.share span.share_text {
+  color: #d4d5d9;
+  font-size: 1em;
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  letter-spacing: 1px;
+}
+/*COLLECTIONS*/
+/*EXHIBITIONS*/
+#content-wrapper div.exhibition {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #FFF;
+  border-bottom: 2px solid #d4d5d9;
+}
+#content-wrapper div.exhibition-title {
+  border-bottom: 2px solid #f4f5f6;
+}
+#content-wrapper div.exhibition-image {
+  padding-top: 10px;
+}
+#content-wrapper div.exhibition-content {
+  padding-top: 20px;
+}
+#content-wrapper div.exhibition p.date {
+  color: #9396a0;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.429em;
+  padding-top: 20px;
+}
+#content-wrapper div.exhibition a.btn-exhibition {
+  display: block;
+  width: 100%;
+  height: 35px;
+  color: #FFF;
+  font-size: 1em;
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  line-height: 35px;
+  padding: 0 10px;
+  background-color: #88c874;
+  background-image: url(../img/btn-submit.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#content-wrapper div.exhibition a.btn-exhibition:hover {
+  text-decoration: none;
+  color: #272d42;
+}
+#content-wrapper div.exhibition-single {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #FFF;
+  border-bottom: 2px solid #d4d5d9;
+}
+#content-wrapper div.exhibition-single h3 {
+  color: #8bc777 !important;
+}
+#content-wrapper div.exhibition-single div.date p {
+  color: #9396a0;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.429em;
+  margin: 0;
+  padding-top: 5px;
+}
+#content-wrapper div.exhibition-single div.share {
+  margin: 10px 0;
+}
+#content-wrapper div.exhibition-single div.share ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+#content-wrapper div.exhibition-single div.share li {
+  display: inline-block;
+  padding: 0 0 0 5px;
+}
+#content-wrapper div.exhibition-single div.share a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: #d4d5d9;
+  color: #FFF;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 35px;
+  outline: none;
+}
+#content-wrapper div.exhibition-single div.share a span {
+  line-height: 35px;
+}
+#content-wrapper div.exhibition-single div.share a:hover {
+  text-decoration: none;
+}
+#content-wrapper div.exhibition-single div.share a.twitter:hover {
+  background: #00baff;
+}
+#content-wrapper div.exhibition-single div.share a.facebook:hover {
+  background: #2a52d4;
+}
+#content-wrapper div.exhibition-single div.share a.email:hover {
+  background: #272d42;
+}
+#content-wrapper div.exhibition-single div.share a:focus {
+  text-decoration: none;
+}
+#content-wrapper div.exhibition-single div.share span.share_text {
+  color: #d4d5d9;
+  font-size: 1em;
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  letter-spacing: 1px;
+}
+/*EXHIBITIONS*/
+#title-wrapper {
+  position: absolute;
+  width: 100%;
+  top: -25px;
+}
+#content-wrapper {
+  background: #f4f5f6;
+  padding: 45px 0 55px 0;
+  position: relative;
+}
+#content {
+  margin-top: 20px;
+}
+#content-wrapper div.content {
+  padding: 20px;
+  background: #FFF;
+  border-bottom: 2px solid #d4d5d9;
+}
+#sidebar div.hours {
+  margin-top: 20px;
+  padding: 20px;
+  background: #FFF;
+  border-bottom: 2px solid #d4d5d9;
+}
+#sidebar div.hours span {
+  color: #87c875;
+  font-size: 3em;
+  display: inline-block;
+}
+#sidebar div.hours h3 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.429em;
+  color: #272d42;
+  line-height: 1.2em;
+  margin: 0;
+  display: inline-block;
+  padding-left: 25px;
+}
+#sidebar div.hours td {
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+  color: #272d42;
+}
+#sidebar div.hours td.grey {
+  color: #9396a0;
+}
+#sidebar div.exhibition-sidebar {
+  margin-top: 20px;
+}
+#sidebar div.exhibition-sidebar div.caption {
+  background: #272d42;
+  padding: 20px;
+}
+#sidebar div.exhibition-sidebar div.caption h3 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Bold';
+  font-size: 1.714em;
+  color: #FFF;
+  line-height: 1.2em;
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+#sidebar div.exhibition-sidebar div.caption h3 a {
+  color: #FFF;
+}
+#sidebar div.exhibition-sidebar div.caption h3 a:hover {
+  text-decoration: none;
+}
+#sidebar div.exhibition-sidebar div.caption h4 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  font-size: 1em;
+  color: #87c875;
+  line-height: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+#sidebar div.events {
+  margin-top: 20px;
+  background: #e4f1df;
+  padding: 20px;
+}
+#sidebar div.events h3 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Bold';
+  font-size: 1.714em;
+  color: #87c875;
+  line-height: 1.2em;
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+/*FOOTER*/
+#social-wrapper {
+  background: #f4f5f6;
+  padding: 20px 0;
+}
+#social-wrapper div.social a {
+  display: block;
+  float: left;
+  width: 45px;
+  height: 45px;
+  background: #9396a0;
+  color: #FFF;
+  font-size: 1.4em;
+  margin-right: 8px;
+  text-align: center;
+  line-height: 45px;
+  outline: none;
+}
+#social-wrapper div.social a span {
+  line-height: 45px;
+}
+#social-wrapper div.social a:hover {
+  background: #d4d5d9;
+  color: #272d42;
+}
+#social-wrapper div.social a:focus {
+  text-decoration: none;
+}
+#social-wrapper div.subscribe {
+  position: absolute;
+  width: 270px;
+  right: 15px;
+  background: #d4d5d9;
+  padding: 20px;
+}
+#social-wrapper div.subscribe div.icon {
+  float: left;
+  width: 37px;
+  height: 26px;
+  background-image: url(../img/ico-newsletter.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#social-wrapper div.subscribe h3 {
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: #272d42;
+  font-family: 'Conv_Mostardesign - Sofia Pro Bold';
+  font-size: 1.429em;
+  letter-spacing: 1px;
+  float: left;
+  line-height: 26px;
+}
+#social-wrapper div.subscribe div.gform_wrapper {
+  padding-top: 20px;
+}
+#social-wrapper div.subscribe ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#social-wrapper div.subscribe li {
+  padding-bottom: 10px;
+}
+#social-wrapper div.subscribe label {
+  display: none;
+}
+#social-wrapper div.subscribe input[type="text"],
+#social-wrapper div.subscribe input[type="email"] {
+  background: #FFF;
+  border: none;
+  padding: 10px;
+  color: #9396a0;
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+  width: 100%;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+#social-wrapper div.subscribe input[type="text"]:focus,
+#social-wrapper div.subscribe input[type="email"]:focus {
+  background: #EEE;
+}
+#social-wrapper div.subscribe div.gform_footer {
+  padding-top: 10px;
+}
+#social-wrapper div.subscribe input[type="submit"] {
+  background-color: #9396a0;
+  background-image: url(../img/btn-submit.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  border: none;
+  padding: 10px;
+  color: #FFF;
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  font-size: 1em;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+#social-wrapper div.subscribe input[type="submit"]:hover {
+  background-color: #272d42;
+}
+/*.gform_wrapper ul {
+  .list-unstyled();
+}
+.gform_wrapper li {
+  .form-group();
+}
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: @state-danger-text;
+}
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  .form-control();
+}
+.ginput_container textarea {
+  height: auto;
+}
+.gform_button {
+  .btn();
+  .btn-primary();
+}
+.gform_wrapper .gfield_error {
+  .gfield_label {
+    color: @state-danger-text;
+  }
+  input,
+  select,
+  textarea {
+    border-color: @alert-danger-border;
+    background-color: @alert-danger-bg;
+    color: @alert-danger-text;
+    .form-control-focus(@alert-danger-text);
+  }
+}
+.validation_error {
+  .alert();
+  .alert-danger();
+}
+#gforms_confirmation_message {
+  .alert();
+  .alert-success();
+}*/
+#back-to-top {
+  background: #d4d5d9 !important;
+  float: right !important;
+}
+footer {
+  padding: 40px 0;
+}
+footer p {
+  color: #d4d5d9;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+footer a {
+  color: #d4d5d9;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+footer a:hover {
+  color: #FFF;
+}
+footer div.contact,
+footer div.menu {
+  border-left: 1px solid #5d6271;
+  padding-left: 20px;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer div.menu li {
+  padding: 0;
+  margin: 0;
+}
+footer div.footer-bottom {
+  padding-top: 60px;
+}
+footer div.logos a {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 44px;
+  float: left;
+}
+footer div.logos a.nab {
+  background-image: url(../img/nab-logo.png);
+  width: 94px;
+  margin-right: 20px;
+}
+footer div.logos a.jca {
+  background-image: url(../img/jca-logo.png);
+  width: 136px;
+}
+footer div.footer-main-menu ul {
+  float: right;
+}
+footer div.footer-main-menu li {
+  display: inline-block;
+  padding: 30px 12px;
+  margin: 0;
+}
+footer div.footer-main-menu a {
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  font-size: 1.357em;
+  color: #FFF;
+  padding: 0;
+}
+footer div.footer-main-menu li.current-menu-item a,
+footer div.footer-main-menu li.current-page-ancestor a,
+footer div.footer-main-menu a:hover {
+  color: #88c874;
+}
+footer div.footer-main-menu li:first-child {
+  padding-left: 0;
+}
+footer div.footer-main-menu li:last-child {
+  padding-right: 0;
+}
+/*FOOTER*/
+/*FORMATTING*/
+#content-wrapper h1,
+#content-wrapper h2,
+#content-wrapper h3,
+#content-wrapper h4 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0 0 5px 0;
+  line-height: 1em;
+}
+#content-wrapper p {
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1em;
+  color: #272d42;
+  line-height: 1.4em;
+  margin: 0 0 10px 0;
+}
+#content-wrapper h1 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Bold';
+  font-size: 2.857em;
+  font-weight: normal;
+  color: #272d42;
+  padding: 0;
+  margin: 0;
+}
+#content-wrapper h2 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Bold';
+  font-size: 1.714em;
+  color: #272d42;
+  line-height: 1.2em;
+  padding: 0 0 10px 0;
+}
+#content-wrapper h3 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Light';
+  font-size: 1.429em;
+  color: #9396a0;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+#content-wrapper h4 {
+  font-family: 'Conv_Mostardesign - Sofia Pro Semi Bold';
+  font-size: 1em;
+  color: #87c875;
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+}
+#content-wrapper ul,
+#content-wrapper ol {
+  padding: 0 0 0 15px;
+  margin: 0 0 10px 0;
+  line-height: 1.4em;
+  color: #272d42;
+}
+#content-wrapper li {
+  padding: 2px 0px 2px 5px;
+  margin: 0;
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+#content-wrapper a {
+  color: #87c875;
+}
+#content-wrapper a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#content-wrapper table {
+  margin: 20px 0 0 0;
+}
+#content-wrapper td {
+  font-size: 1em;
+  vertical-align: top;
+  padding: 0 15px 2px 0;
+  color: #272d42;
+}
+#content-wrapper hr {
+  color: #f4f5f6;
+  border: #f4f5f6 1px solid;
+  border-style: none none solid;
+}
+/*FORMATTING*/
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+/* Larger phones (phones, 480px and up) */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #header-menu-wrapper div.header-menu {
+    float: left;
+    width: 100%;
+  }
+  #header-menu-wrapper div.menu {
+    display: block;
+    float: left;
+  }
+  #header-menu-wrapper div.search {
+    display: block;
+    float: right;
+  }
+  #header-menu-wrapper div.search button {
+    position: relative;
+    margin: 0;
+  }
+  #header-menu-wrapper div.search input[type="text"] {
+    width: 100px;
+    /*padding: 25px 10px;*/
+    padding: 2px 10px;
+  }
+  #main-menu-wrapper a.logo {
+    width: 320px;
+  }
+  #main-menu-wrapper div.mobile-menu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #main-menu-wrapper div.navbar-header {
+    position: relative;
+    height: auto;
+  }
+  #main-menu-wrapper div.menu-row {
+    position: relative;
+  }
+  #main-menu-wrapper div.menu-container {
+    position: static;
+  }
+  #main-menu-wrapper li.current-page-parent a {
+    color: #88c874;
+  }
+  #main-menu-wrapper li.current_menu_item ul.sub-menu,
+  #main-menu-wrapper li.current-menu-parent ul.sub-menu {
+    display: block;
+  }
+  #main-menu-wrapper ul.sub-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 94px;
+    width: auto;
+  }
+  #main-menu-wrapper ul.sub-menu li {
+    background: none;
+    margin-left: 15px;
+    display: inline-block;
+  }
+  #main-menu-wrapper ul.sub-menu li.current-menu-item a,
+  #main-menu-wrapper ul.sub-menu li a:hover {
+    color: #272d42;
+  }
+  #main-menu-wrapper ul.sub-menu a {
+    color: #FFF;
+  }
+  #main-menu-wrapper .navbar {
+    position: static;
+  }
+  #main-menu-wrapper ul {
+    float: right;
+    background: none;
+  }
+  #main-menu-wrapper li {
+    display: inline-block;
+    padding: 30px 12px;
+    border-top: none;
+    position: static;
+  }
+  #main-menu-wrapper ul a {
+    padding: 0;
+    font-size: 1.357em;
+    background: none;
+  }
+  #main-menu-wrapper li:first-child {
+    padding-left: 0;
+  }
+  #main-menu-wrapper li:last-child {
+    padding-right: 0;
+  }
+  #slider-wrapper {
+    padding: 55px 0;
+  }
+  #sidebar div.events {
+    margin-top: 0;
+  }
+  #back-to-top {
+    float: left !important;
+  }
+  #title-wrapper {
+    top: -40px;
+  }
+  #content {
+    margin-top: 0;
+  }
+  #content-wrapper h1 {
+    font-size: 4.5em;
+  }
+  #collection-single div.image {
+    margin-bottom: 0;
+  }
+  #collection-single div.related {
+    display: block;
+  }
+  #collection-single div.images {
+    display: block;
+  }
+  #collection-single p.code {
+    display: block;
+  }
+  #content-wrapper div.exhibition-title {
+    float: left;
+    min-height: 150px;
+    border-bottom: 2px solid #f4f5f6;
+    width: 70%;
+  }
+  #content-wrapper div.exhibition-image {
+    float: right;
+    padding: 0;
+  }
+  #content-wrapper div.exhibition a.btn-exhibition {
+    width: 230px;
+  }
+  #content-wrapper div.exhibition-single div.date {
+    float: left;
+  }
+  #content-wrapper div.exhibition-single div.share {
+    float: right;
+    margin: 0;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #header-menu-wrapper div.header-menu {
+    float: right;
+    width: auto;
+  }
+  #header-menu-wrapper div.menu {
+    display: inline-block;
+    float: none;
+  }
+  #header-menu-wrapper div.search {
+    display: inline-block;
+    float: none;
+  }
+  #sidebar div.hours {
+    margin-top: 0;
+  }
+  #sidebar div.hours h3 {
+    padding-left: 10px;
+  }
+  #sidebar div.events {
+    margin-top: 20px;
+  }
+  #social-wrapper div.subscribe {
+    width: 220px;
+  }
+  #collection-single div.mobile-product-header {
+    display: none;
+  }
+  #collection-single div.desktop-product-header {
+    display: block;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #sidebar div.hours h3 {
+    padding-left: 25px;
+  }
+  #social-wrapper div.subscribe {
+    width: 270px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Retina-specific stuff here */
+  #main-menu-wrapper a.logo {
+    background-image: url(../img/logo@2x.png);
+    background-size: 100% 100%;
+  }
+  #donation-wrapper a.donation,
+  #donation-wrapper a.donation:after {
+    background-image: url(../img/btn-donate@2x.png);
+    background-size: 30px 30px;
+  }
+  footer div.logos a.nab {
+    background-image: url(../img/nab-logo@2x.png);
+    background-size: 100% 100%;
+  }
+  #social-wrapper div.subscribe div.icon {
+    background-image: url(../img/ico-newsletter@2x.png);
+    background-size: 100% 100%;
+  }
+  #social-wrapper div.subscribe input[type="submit"] {
+    background-image: url(../img/btn-submit@2x.png);
+    background-size: 100% 100%;
+  }
+  #content-wrapper div.exhibition a.btn-exhibition {
+    background-image: url(../img/btn-submit@2x.png);
+    background-size: 100% 100%;
+  }
+  footer div.logos a.jca {
+    background-image: url(../img/jca-logo@2x.png);
+    background-size: 100% 100%;
+  }
+}

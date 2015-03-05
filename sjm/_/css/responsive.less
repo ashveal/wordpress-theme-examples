@@ -1,0 +1,261 @@
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+
+// Small screen / tablet
+@screen-sm:                  768px;
+
+// Medium screen / desktop
+@screen-md:                  992px;
+
+// Large screen / wide desktop
+@screen-lg:                  1200px;
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Larger phones (phones, 480px and up) */
+@media (min-width: @screen-xs) {
+
+	
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) {
+
+	#header-menu-wrapper div.header-menu {
+		float: left;
+		width: 100%;
+	}
+	
+	#header-menu-wrapper div.menu {
+		display: block;
+		float: left;
+	}
+	
+	#header-menu-wrapper div.search {
+		display: block;
+		float: right;
+	}
+	
+	#header-menu-wrapper div.search button {
+		position: relative;
+		margin: 0;
+	}
+	
+	#header-menu-wrapper div.search input[type="text"] {
+		width: 100px;
+		/*padding: 25px 10px;*/
+		padding: 2px 10px;
+	}
+	
+	#main-menu-wrapper a.logo {
+		width: 320px;
+	}
+	
+	#main-menu-wrapper div.mobile-menu {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	#main-menu-wrapper div.navbar-header {
+		position: relative;
+		height: auto;
+	}
+	
+	#main-menu-wrapper div.menu-row {
+		position: relative;
+	}
+	
+	#main-menu-wrapper div.menu-container {
+		position: static;
+	}
+	
+	#main-menu-wrapper li.current-page-parent a {
+		color: #88c874;
+	}
+	
+	#main-menu-wrapper li.current_menu_item ul.sub-menu,
+	#main-menu-wrapper li.current-menu-parent ul.sub-menu {
+		display: block;
+	}
+	
+	#main-menu-wrapper ul.sub-menu {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 94px;
+		width: auto;
+	}
+
+	#main-menu-wrapper ul.sub-menu li {
+		background: none;
+		margin-left: 15px;
+		display: inline-block;
+	}
+	
+	#main-menu-wrapper ul.sub-menu li.current-menu-item a,
+	#main-menu-wrapper ul.sub-menu li a:hover {
+		color: #272d42;
+	} 
+	
+	#main-menu-wrapper ul.sub-menu a {
+		color: #FFF;
+	}
+	
+	#main-menu-wrapper .navbar {
+		position: static;
+	}
+	
+	#main-menu-wrapper ul {
+		float: right;
+		background: none;
+	}
+	
+	#main-menu-wrapper li {
+		display: inline-block;
+		padding: 30px 12px;
+		border-top: none;
+		position: static;
+	}
+	
+	#main-menu-wrapper ul a {
+		padding: 0;
+		font-size: 1.357em;
+		background: none;
+	}
+	
+	#main-menu-wrapper li:first-child {
+		padding-left: 0;
+	}
+	
+	#main-menu-wrapper li:last-child {
+		padding-right: 0;
+	}
+	
+	#slider-wrapper {
+		padding: 55px 0;
+	}
+	
+	#sidebar div.events {
+		margin-top: 0;
+	}
+	
+	#back-to-top {
+		float: left !important;
+	}
+	
+	#title-wrapper {
+		top: -40px;
+	}
+	
+	#content {
+		margin-top: 0;
+	}
+	
+	#content-wrapper h1 { 
+		font-size: 4.5em;
+	}
+	
+	#collection-single div.image {
+		margin-bottom: 0;
+	}
+	
+	#collection-single div.related {
+		display: block;
+	}
+	
+	#collection-single div.images {
+		display: block;
+	}
+	
+	#collection-single p.code {
+		display: block;
+	}
+	
+	#content-wrapper div.exhibition-title {
+		float: left;
+		min-height: 150px;
+		border-bottom: 2px solid #f4f5f6;
+		width: 70%;
+	}
+	
+	#content-wrapper div.exhibition-image {
+		float: right;
+		padding: 0;
+	}
+	
+	#content-wrapper div.exhibition a.btn-exhibition {
+		width: 230px;
+	}
+	
+	#content-wrapper div.exhibition-single div.date {
+		float: left;
+	}
+	
+	#content-wrapper div.exhibition-single div.share {
+		float: right;
+		margin: 0;
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+
+	#header-menu-wrapper div.header-menu {
+		float: right;
+		width: auto;
+	}
+	
+	#header-menu-wrapper div.menu {
+		display: inline-block;
+		float: none;
+	}
+	
+	#header-menu-wrapper div.search {
+		display: inline-block;
+		float: none;
+	}
+	
+	#sidebar div.hours {
+		margin-top: 0;
+	}
+	
+	#sidebar div.hours h3 {
+		padding-left: 10px;
+	}
+	
+	#sidebar div.events {
+		margin-top: 20px;
+	}
+	
+	#social-wrapper div.subscribe {
+		width: 220px;
+	}
+	
+	#collection-single div.mobile-product-header {
+		display: none;
+	}
+	
+	#collection-single div.desktop-product-header {
+		display: block;
+	}
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) {
+
+	#sidebar div.hours h3 {
+		padding-left: 25px;
+	}
+	
+	#social-wrapper div.subscribe {
+		width: 270px;
+	}
+
+}
